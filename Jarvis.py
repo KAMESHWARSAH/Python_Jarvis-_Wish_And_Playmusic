@@ -18,15 +18,15 @@ def speak(audio):
 def wishMe():
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour<12:
-        speak("Good Morning Kameshwar  !")
+        speak("Good Morning Ankit  !")
 
     elif hour>=12 and hour<18:
-        speak("Good Afternoon Kameshwar !")   
+        speak("Good Afternoon Ankit !")   
 
     else:
-        speak("Good Evening Kameshwar!")  
+        speak("Good Evening Ankit!")  
 
-    speak("I am your Jarvis . Please tell me how may I help you Kameshwar ")       
+    speak("I am your Jarvis . Please tell me how may I help you Ankit ")       
 
 def takeCommand():
    
@@ -58,3 +58,9 @@ if _name_ == "_main_":
             songs = os.listdir(music_dir)
             print(songs)    
             os.startfile(os.path.join(music_dir, songs[5]))
+        elif 'open youtube' in query:
+            webbrowser.open("youtube.com")
+
+        elif 'open google' in query:
+            webbrowser.open("google.com")
+       
