@@ -63,4 +63,6 @@ if _name_ == "_main_":
 
         elif 'open google' in query:
             webbrowser.open("google.com")
+        elif 'open facebook' in query:
+            webbrowser.open("google.com")
        
